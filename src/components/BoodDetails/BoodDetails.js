@@ -2,7 +2,7 @@ import React from 'react';
 import { FaStar } from 'react-icons/fa';
 import { useLoaderData } from 'react-router-dom';
 import "./BoodDetails.css";
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
 const BoodDetails = () => {
     const datas = useLoaderData();
@@ -12,8 +12,8 @@ const BoodDetails = () => {
     };
 
     const center = {
-        lat: -3.745,
-        lng: -38.523
+        lat: 23.739302100290843,
+        lng:  90.39579743900444
     };
 
 
@@ -45,10 +45,11 @@ const BoodDetails = () => {
                     <GoogleMap
                         mapContainerStyle={containerStyle}
                         center={center}
-                        zoom={10}
+                        zoom={16}
                     >
-                        { /* Child components, such as markers, info windows, etc. */}
-                        <></>
+                        <Marker
+                            position={center}
+                        />
                     </GoogleMap>
                 </LoadScript>
             </div>
