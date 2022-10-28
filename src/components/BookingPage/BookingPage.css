@@ -1,0 +1,31 @@
+.booking-date {
+    margin-top: -50px;
+    background-color: white;
+    width: 60%;
+    padding: 20px;
+    color: black;
+    border-radius: 8px;
+}
+
+.booking-date input {
+    background-color: rgb(200, 195, 195);
+    color: black;
+    font-weight: bold;
+    border: none;
+    display: block;
+    padding: 12px 20px;
+    border-radius: 5px;
+    width: 90%;
+    margin: 12px 0px;
+}
+
+.final-btn {
+    width: 100%;
+    text-align: center;
+    background-color: yellow;
+    color: black;
+    padding: 8px 25px;
+    border-radius: 6px;
+    border: none;
+    font-size: 18px;
+}
